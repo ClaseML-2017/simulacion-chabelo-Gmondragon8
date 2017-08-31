@@ -1,4 +1,7 @@
 # simulacion-chabelo-Gmondragon8
+# Gustavo Augusto Mondrag[on S[anchez
+# 136894
+
 
 alt = 0
 nexp = 1000000
