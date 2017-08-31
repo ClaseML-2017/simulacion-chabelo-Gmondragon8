@@ -1,0 +1,28 @@
+# simulacion-chabelo-Gmondragon8
+
+alt = 0
+nexp = 1000000
+x = ['Ganaste','Perdiste','Perdiste']
+for i in range(0,nexp):
+    n = rand.randint(0,2)
+    n2 = (n+1)%3
+    n3 = (n2+1)%3
+    choose = x[n]
+    if(x[n2]=='Ganaste'):
+        opend = x[n3]
+        notOpen = x[n2]
+    else:
+        opend = x[n2]
+        notOpen = x[n3]
+
+    #print "Escogiste" + choose
+    #print "Se abrio" + opend
+    #print "Si lo hubieras cambiado" + notOpen
+    
+    if(notOpen=='Ganaste'):
+        alt = alt + 1
+        #print "Ganaste por cambiarla"
+        
+        
+    #Probabilidad de ganar si cambiaste la opci[on]
+print alt*100.0/nexp
